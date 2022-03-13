@@ -24,7 +24,7 @@ if you want to remap the default keybinding add to input.conf
 <new-key> script-binding show_current_speed
 ```
 
-this will still keep the default key binding
+this will still keep the default keybinding
 
 if you want to remove it
 

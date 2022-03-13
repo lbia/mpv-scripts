@@ -3,7 +3,8 @@
 mpv plugin that shows current playback speed
 
 forked from https://github.com/vflorelle/mpv-scripts
-removing pauses
+
+just removed pauses
 
 ## speed
 always show current playback speed on the OSD

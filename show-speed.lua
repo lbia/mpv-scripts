@@ -17,4 +17,4 @@ function show_current_speed()
     end
 end
 
-mp.add_key_binding("g", "show_current_speed", show_current_speed)
+mp.add_key_binding("e", "show_current_speed", show_current_speed)

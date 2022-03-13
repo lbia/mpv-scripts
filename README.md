@@ -12,7 +12,7 @@ always show current playback speed on the OSD
 ### usage
 key bind|effect
 --------|------
-`g`     |toggle script on/off
+`e`     |toggle script on/off
 
 ### Installation
 copy/link show-speed.lua into mpv scripts folder

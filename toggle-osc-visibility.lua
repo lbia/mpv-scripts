@@ -13,7 +13,7 @@ function toggle_osc_visibility()
     level = mp.get_property("osd-level")
     mp.set_property_number("osd-level", 0)
 
-    mp.add_timeout(0.01,
+    mp.add_timeout(0.025,
         function()
             visibility = not visibility
             if visibility == false then
@@ -26,7 +26,7 @@ function toggle_osc_visibility()
         end
     )
 
-    mp.add_timeout(0.02,
+    mp.add_timeout(0.050,
         function()
             mp.set_property_number("osd-level", level)
         end

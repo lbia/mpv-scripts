@@ -13,16 +13,20 @@ function toggle_osc_visibility()
     level = mp.get_property("osd-level")
     mp.set_property_number("osd-level", 0)
 
-    visibility = not visibility
-    if visibility == false then
-        mp.command("script-message osc-visibility never")
-        -- mp.command("no-osd script-message osc-visibility never")
-    else
-        mp.command("script-message osc-visibility always")
-        -- mp.command("no-osd script-message osc-visibility always")
-    end
-
     mp.add_timeout(0.01,
+        function()
+            visibility = not visibility
+            if visibility == false then
+                mp.command("script-message osc-visibility never")
+                -- mp.command("no-osd script-message osc-visibility never")
+            else
+                mp.command("script-message osc-visibility always")
+                -- mp.command("no-osd script-message osc-visibility always")
+            end
+        end
+    )
+
+    mp.add_timeout(0.02,
         function()
             mp.set_property_number("osd-level", level)
         end
